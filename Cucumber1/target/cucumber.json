@@ -1,0 +1,96 @@
+[
+  {
+    "id": "test-facebook-smoke-scenario",
+    "tags": [
+      {
+        "name": "@FacebookSmokeTest",
+        "line": 1
+      }
+    ],
+    "description": "",
+    "name": "Test Facebook smoke scenario",
+    "keyword": "Feature",
+    "line": 2,
+    "elements": [
+      {
+        "id": "test-facebook-smoke-scenario;test-login-with-valid-credentials;;2",
+        "tags": [
+          {
+            "name": "@FacebookSmokeTest",
+            "line": 1
+          }
+        ],
+        "description": "",
+        "name": "Test login with valid credentials",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "steps": [
+          {
+            "result": {
+              "duration": 35381931931,
+              "status": "passed"
+            },
+            "name": "Open firefox and start application",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "smokeTest.open_firefox_and_start_application()"
+            }
+          },
+          {
+            "result": {
+              "duration": 800673902,
+              "status": "passed"
+            },
+            "name": "I enter valid \"testUser123\" and valid \"pass123\"",
+            "keyword": "When ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "testUser123",
+                  "offset": 15
+                },
+                {
+                  "val": "pass123",
+                  "offset": 39
+                }
+              ],
+              "location": "smokeTest.i_enter_valid_and_valid(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ]
+          },
+          {
+            "result": {
+              "duration": 3209664581,
+              "status": "passed"
+            },
+            "name": "user should be able to login successfully",
+            "keyword": "Then ",
+            "line": 7,
+            "match": {
+              "location": "smokeTest.user_should_be_able_to_login_successfully()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3546864168,
+              "status": "passed"
+            },
+            "name": "Browser should be closed",
+            "keyword": "Then ",
+            "line": 8,
+            "match": {
+              "location": "smokeTest.browser_should_be_closed()"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "uri": "Test1.feature"
+  }
+]
